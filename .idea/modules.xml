@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01. ThreadPool/01. ThreadPool.iml" filepath="$PROJECT_DIR$/01. ThreadPool/01. ThreadPool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02. ImageDownloader/02. ImageDownloader.iml" filepath="$PROJECT_DIR$/02. ImageDownloader/02. ImageDownloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLab.iml" filepath="$PROJECT_DIR$/JavaLab.iml" />
     </modules>
   </component>
