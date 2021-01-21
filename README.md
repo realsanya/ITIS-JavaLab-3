@@ -13,4 +13,4 @@
 10. Сделать AnnotationProcessing
 11. CSRF и постоянное хранилище сессий
 ### Ссылка на семестровую работу:
-[WhiteHall](#https://github.com/realsanya/WhiteHall)
+[WhiteHall](https://github.com/realsanya/WhiteHall)
