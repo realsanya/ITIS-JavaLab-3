@@ -9,7 +9,7 @@
 * [MavenImageDownloader](https://github.com/realsanya/JavaLab/tree/main/MavenImageDownloader)
 4. Реализовать SimpleJdbcTemplate (реализовано в семестровой работе по информатике, ссылка ниже)
 * [PuffyDonut](https://github.com/realsanya/Donuts/blob/backend/PuffyDonut/src/main/java/repositories/SimpleJdbcTemplate.java)
-5. Логирование и примитивная безопасность (пункты 5, 6, 8 реализованы в одном приложении, ссылки на конкретные файлы приложены к каждому пункту)
+5. Логирование и примитивная безопасность (пункты 5, 6, 8 реализованы в одном приложении)
 * [SimpleApp](https://github.com/realsanya/SimpleApp/tree/master/src/main/java/filters)
 6. Password Encoder feat. HttpSession
 * [SimpleApp](https://github.com/realsanya/SimpleApp/commit/44ac2708ea162aec0a487d534afe940af3058d6f)
