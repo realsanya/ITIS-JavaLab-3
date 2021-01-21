@@ -17,6 +17,7 @@
 8. Сделать Web-приложение со страницами на Freemarker (2-3) страницы
 * [SimpleApp](https://github.com/realsanya/SimpleApp)
 9. Sockets
+* [Chat](https://github.com/realsanya/JavaLab/tree/main/Chat)
 10. Сделать AnnotationProcessing
 * [AnnotationProcessing](https://github.com/realsanya/JavaLab/tree/main/AnnotationProcessing)
 11. CSRF и постоянное хранилище сессий
