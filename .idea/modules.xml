@@ -3,10 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AnnotationProcessing/AnnotationProcessing.iml" filepath="$PROJECT_DIR$/AnnotationProcessing/AnnotationProcessing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chat/Chat.iml" filepath="$PROJECT_DIR$/Chat/Chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/ImageDownloader/ImageDownloader.iml" filepath="$PROJECT_DIR$/ImageDownloader/ImageDownloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaLab.iml" filepath="$PROJECT_DIR$/JavaLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/MavenImageDownloader/MavenImageDownloader.iml" filepath="$PROJECT_DIR$/MavenImageDownloader/MavenImageDownloader.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadPool/ThreadPool.iml" filepath="$PROJECT_DIR$/ThreadPool/ThreadPool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chat/client/client.iml" filepath="$PROJECT_DIR$/Chat/client/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chat/server/server.iml" filepath="$PROJECT_DIR$/Chat/server/server.iml" />
     </modules>
   </component>
 </project>

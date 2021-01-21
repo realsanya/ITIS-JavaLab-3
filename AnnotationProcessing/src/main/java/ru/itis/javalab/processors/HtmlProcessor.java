@@ -29,7 +29,7 @@ public class HtmlProcessor extends AbstractProcessor {
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnvironment) {
 
         Set<? extends Element> annotatedElements = roundEnvironment.getElementsAnnotatedWith(HtmlForm.class);
-        Configuration configuration = new Configuration(Configuration.VERSION_2_3_0);
+        Configuration configuration = new Configuration();
         configuration.setClassForTemplateLoading(HtmlProcessor.class, "/");
         configuration.setDefaultEncoding("UTF-8");
 
