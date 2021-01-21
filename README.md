@@ -13,5 +13,5 @@
 9. Sockets
 10. Сделать AnnotationProcessing
 11. CSRF и постоянное хранилище сессий
-### Ссылка на семестровую работу:
+### Ссылка на семестровую работу по JavaLab:
 * [WhiteHall](https://github.com/realsanya/WhiteHall)
