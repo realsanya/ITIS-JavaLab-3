@@ -1,3 +1,5 @@
+package main.ru.itis.javalab;
+
 public class Main {
     public static void main(String[] args) {
         ThreadPool threadPool = new ThreadPool(2);

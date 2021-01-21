@@ -1,3 +1,5 @@
+package main.ru.itis.javalab;
+
 import com.beust.jcommander.IStringConverter;
 
 import java.util.ArrayList;
