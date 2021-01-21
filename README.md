@@ -4,7 +4,8 @@
 1. Реализовать Thread Pool
 2. JAR-приложения для многопоточной загрузки
 3. Реализлвать Maven-проект для многопоточной загрузки
-4. Реализовать SimpleJdbcTemplate
+4. Реализовать SimpleJdbcTemplate (реализовано в семестровой работе по информатике, ссылка ниже)
+* [PuffyDonut](https://github.com/realsanya/Donuts/blob/backend/PuffyDonut/src/main/java/repositories/SimpleJdbcTemplate.java)
 5. Логирование и примитивная безопасность
 6. Password Encoder feat. HttpSession
 7. Реализовать EntityManager
@@ -13,4 +14,4 @@
 10. Сделать AnnotationProcessing
 11. CSRF и постоянное хранилище сессий
 ### Ссылка на семестровую работу:
-[WhiteHall](https://github.com/realsanya/WhiteHall)
+* [WhiteHall](https://github.com/realsanya/WhiteHall)
