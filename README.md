@@ -11,8 +11,8 @@
 6. Password Encoder feat. HttpSession
 * [SimpleApp](https://github.com/realsanya/SimpleApp/commit/44ac2708ea162aec0a487d534afe940af3058d6f)
 7. Реализовать EntityManager
-
 8. Сделать Web-приложение со страницами на Freemarker (2-3) страницы
+* [SimpleApp](https://github.com/realsanya/SimpleApp)
 9. Sockets
 10. Сделать AnnotationProcessing
 11. CSRF и постоянное хранилище сессий
