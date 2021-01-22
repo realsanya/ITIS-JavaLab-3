@@ -22,5 +22,6 @@
 10. Сделать AnnotationProcessing
 * [AnnotationProcessing](https://github.com/realsanya/JavaLab/tree/main/AnnotationProcessing)
 11. CSRF и постоянное хранилище сессий
+* [w/ servlets](https://github.com/realsanya/JavaLab/tree/main/CSRF/src/main)
 ### Ссылка на семестровую работу по JavaLab:
 * [WhiteHall](https://github.com/realsanya/WhiteHall)
