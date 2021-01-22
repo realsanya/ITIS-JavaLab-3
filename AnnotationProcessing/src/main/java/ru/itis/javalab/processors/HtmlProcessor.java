@@ -1,13 +1,8 @@
 package ru.itis.javalab.processors;
 
 import com.google.auto.service.AutoService;
-import freemarker.template.Configuration;
-import freemarker.template.Template;
-import freemarker.template.TemplateException;
 import ru.itis.javalab.annotations.HtmlForm;
 import ru.itis.javalab.annotations.HtmlInput;
-import ru.itis.javalab.models.Form;
-import ru.itis.javalab.models.Input;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Processor;
@@ -20,7 +15,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.*;
+import java.util.Set;
 
 @AutoService(Processor.class)
 @SupportedAnnotationTypes(value = {"annotations.HtmlForm", "annotations.HtmlInput"})
@@ -29,47 +24,30 @@ public class HtmlProcessor extends AbstractProcessor {
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnvironment) {
 
         Set<? extends Element> annotatedElements = roundEnvironment.getElementsAnnotatedWith(HtmlForm.class);
-        Configuration configuration = new Configuration();
-        configuration.setClassForTemplateLoading(HtmlProcessor.class, "/");
-        configuration.setDefaultEncoding("UTF-8");
 
         for (Element element : annotatedElements) {
-            Map<String, Object> root = new HashMap<>();
-            Form form = new Form();
-            root.put("form", form);
-            Template template;
-            try {
-                template = configuration.getTemplate("form.ftl");
-            } catch (IOException e) {
-                throw new IllegalStateException(e);
-            }
+            BufferedWriter out;
+
             String path = HtmlProcessor.class.getProtectionDomain().getCodeSource().getLocation().getPath();
             path = path.substring(1) + element.getSimpleName().toString() + ".html";
-            Path filePath = Paths.get(path);
-            BufferedWriter out;
+            Path outPath = Paths.get(path);
+
             try {
-                out = new BufferedWriter(new FileWriter(filePath.toFile()));
-                HtmlForm formAnnotation = element.getAnnotation(HtmlForm.class);
-                form.setAction(formAnnotation.action());
-                form.setMethod(formAnnotation.method());
-                List<Input> inputs = new ArrayList<>();
-                form.setInputs(inputs);
-                for (Element elementIn : element.getEnclosedElements()) {
-                    HtmlInput inputAnnotation = elementIn.getAnnotation(HtmlInput.class);
+                out = new BufferedWriter(new FileWriter(outPath.toFile()));
+                HtmlForm elementAnnotation = element.getAnnotation(HtmlForm.class);
+                out.write("<form action='" + elementAnnotation.action() + "' method='" + elementAnnotation.method() + "'>\n");
+                Set<? extends Element> inputAnnotation = roundEnvironment.getElementsAnnotatedWith(HtmlInput.class);
+                for (Element elementIn : annotatedElements) {
                     if (inputAnnotation != null) {
-                        inputs.add(new Input(inputAnnotation.type(), inputAnnotation.name(), inputAnnotation.placeholder()));
+                        HtmlInput input = elementIn.getAnnotation(HtmlInput.class);
+                        out.write("<input type='" + input.type() + "' name='" + input.name() + "' placeholder='" + input.placeholder() + "'>\n");
                     }
                 }
+                out.write("</form");
+                out.close();
             } catch (IOException e) {
                 throw new IllegalStateException(e);
             }
-            try {
-                template.process(root, out);
-                out.close();
-            } catch (TemplateException | IOException e) {
-                e.printStackTrace();
-            }
-
         }
         return true;
     }
