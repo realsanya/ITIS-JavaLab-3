@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AnnotationProcessing/AnnotationProcessing.iml" filepath="$PROJECT_DIR$/AnnotationProcessing/AnnotationProcessing.iml" />
-      <module fileurl="file://$PROJECT_DIR$/CSRF/CSRF.iml" filepath="$PROJECT_DIR$/CSRF/CSRF.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRF_C/CSRF_C.iml" filepath="$PROJECT_DIR$/CSRF_C/CSRF_C.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CSRF_S/CSRF_S.iml" filepath="$PROJECT_DIR$/CSRF_S/CSRF_S.iml" />
       <module fileurl="file://$PROJECT_DIR$/Chat/Chat.iml" filepath="$PROJECT_DIR$/Chat/Chat.iml" />
       <module fileurl="file://$PROJECT_DIR$/EntityManager/EntityManager.iml" filepath="$PROJECT_DIR$/EntityManager/EntityManager.iml" />
       <module fileurl="file://$PROJECT_DIR$/ImageDownloader/ImageDownloader.iml" filepath="$PROJECT_DIR$/ImageDownloader/ImageDownloader.iml" />
