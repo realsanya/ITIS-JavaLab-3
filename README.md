@@ -12,7 +12,7 @@
 5. Логирование и примитивная безопасность (пункты 5, 6, 8 реализованы в одном приложении)
 * [SimpleApp](https://github.com/realsanya/SimpleApp/tree/master/src/main/java/filters)
 6. Password Encoder feat. HttpSession
-* [SimpleApp](https://github.com/realsanya/SimpleApp/commit/44ac2708ea162aec0a487d534afe940af3058d6f)
+* [SimpleApp](https://github.com/realsanya/SimpleApp)
 7. Реализовать EntityManager
 * [EntityManager](https://github.com/realsanya/JavaLab/tree/main/EntityManager)
 8. Сделать Web-приложение со страницами на Freemarker (2-3) страницы
@@ -22,6 +22,7 @@
 10. Сделать AnnotationProcessing
 * [AnnotationProcessing](https://github.com/realsanya/JavaLab/tree/main/AnnotationProcessing)
 11. CSRF и постоянное хранилище сессий
-* [w/ servlets](https://github.com/realsanya/JavaLab/tree/main/CSRF/src/main)
+* [w/ servlets](https://github.com/realsanya/JavaLab/tree/main/CSRF_S)
+* [w/ controllers](https://github.com/realsanya/JavaLab/tree/main/CSRF_C)
 ### Ссылка на семестровую работу по JavaLab:
 * [WhiteHall](https://github.com/realsanya/WhiteHall)
